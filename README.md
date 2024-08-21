@@ -1,6 +1,7 @@
 # CS50 Final Project: On-Track
+#### Video Demo:  <https://youtu.be/v7HUGeiEqQg>
 
-## On Track is a sleek, minimalistic to-do application built using Electron and Vite for React. This application not only helps you manage your daily tasks efficiently but also brings a touch of beauty to your workflow by integrating with the Unsplash API to display stunning, random images as backgrounds. The app also leverages Firebase Firestore as a backend to store your tasks securely in the cloud, ensuring that your to-dos are accessible anytime and anywhere.
+#### Description: On Track is a sleek, minimalistic to-do application built using Electron and Vite for React. This application not only helps you manage your daily tasks efficiently but also brings a touch of beauty to your workflow by integrating with the Unsplash API to display stunning, random images as backgrounds. The app also leverages Firebase Firestore as a backend to store your tasks securely in the cloud, ensuring that your to-dos are accessible anytime and anywhere.
 
 ## Features
 
@@ -29,6 +30,7 @@ To get started with On Track, follow these steps:
    $ npm install
    ```
 2. **Create a `.env` file for your API keys**
+```
     VITE_UNSPLASH_API_KEY=your_unsplash_api_key_here
     VITE_FIREBASE_API_KEY=your_firebase_api_key_here
     VITE_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain_here
@@ -36,6 +38,7 @@ To get started with On Track, follow these steps:
     VITE_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket_here
     VITE_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id_here
     VITE_FIREBASE_APP_ID=your_firebase_app_id_here
+```
 
 
 ### Development
