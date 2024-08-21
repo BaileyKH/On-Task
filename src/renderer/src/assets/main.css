@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('src/main/fonts/poppins-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('src/main/fonts/poppins-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@layer base {
+  body {
+    @apply bg-black/25 backdrop-blur-lg font-poppins
+  }
+
+  .title-bar {
+    -webkit-app-region: drag;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.1); /* Custom background color */
+  }
+
+  .unselectable {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-app-region: no-drag;
+  }
+
+  .checkbox {
+    @apply appearance-none w-3 h-3 bg-black/40 border border-white/60 rounded-sm cursor-pointer focus:ring-2 focus:ring-red-700 focus:outline-none;
+  }
+
+  .checkbox:checked {
+    @apply bg-green-600 border-transparent;
+  }
+
+  .grad-border {
+    border-bottom: 2px solid transparent; /* Transparent border to allow for gradient */
+    border-image: radial-gradient(circle, rgba(255, 255, 255, 0.233), rgba(0, 0, 0, 0.249)) 1;
+  }
+
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.311) !important; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners on the scrollbar thumb */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px; /* Width of the scrollbar */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: black !important; /* Background color of the scrollbar track */
+  }
+}
