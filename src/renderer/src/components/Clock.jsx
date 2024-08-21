@@ -8,7 +8,7 @@ export const Clock = () => {
         async function getBgImage() {
             let src = '';
             try {
-                const res = await fetch("https://api.unsplash.com/photos/random?client_id=xbACbrn1FK1mgcZIVI9lzv77YiIWGaQvFm9P_oWEi_k&query=nature&orientation=landscape");
+                const res = await fetch(`https://api.unsplash.com/photos/random?client_id=${import.meta.env.VITE_UNSPLASH_API_KEY}&query=nature&orientation=landscape`);
                 const data = await res.json();
                 src = data.urls.full;
             } catch (err) {
