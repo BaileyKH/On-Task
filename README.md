@@ -5,7 +5,7 @@
 
 ## Features
 
-- **Task Management**: Add, delete, and mark tasks as completed with an easy-to-use interface.
+- **Task Management**: Add, Delete, and Mark tasks as completed with an easy-to-use interface.
 - **Beautiful Backgrounds**: Each time you open the app, a new random image from Unsplash graces the background, adding visual appeal to your to-do list.
 - **Cloud Storage**: Your tasks are stored in Firebase Firestore, allowing for persistence and access across different devices.
 - **Real-time Clock**: The app features a real-time clock to help you stay aware of the time while managing your tasks.
